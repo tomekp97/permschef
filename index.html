@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>permschef.local</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="column" id="perms-user">
+            <h3><strong>I</strong> want to be able to:</h3>
+
+            <div class="level">
+                <button class="perm-level perm-level-user" data-level="0" data-category="user">Do nothing</button>
+            </div>
+
+            <div class="level">
+                <button class="perm-level perm-level-user" data-level="1" data-category="user">Execute</button>
+            </div>
+
+            <div class="level">
+                <button class="perm-level perm-level-user" data-level="2" data-category="user">Write</button>
+            </div>
+
+            <div class="level">
+                <button class="perm-level perm-level-user" data-level="4" data-category="user">Read</button>
+            </div>
+            <!-- <select class="levels" id="perms-user-levels">
+                <option value="0">Do nothing</option>
+                <option value="1">Execute</option>
+                <option value="2">Write</option>
+                <option value="4">Read</option>
+            </select> -->
+        </div>
+        <!-- <div class="column" id="perms-group"></div>
+        <div class="column" id="perms-other"></div> -->
+    </div>
+
+    <div class="container mt">
+        <div id="extra-perms" class="d-none">
+            <button class="extra-perm-level" data-level="1">Execute</button>
+            <button class="extra-perm-level" data-level="2">Write</button>
+            <button class="extra-perm-level" data-level="4">Read</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="selected-perms">
+            <div class="perm" id="user"></div>
+            <div class="perm" id="group"></div>
+            <div class="perm" id="other"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
